@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Michael Mockus Documentation',
+  title: 'Michael Mockus Documentation -c',
   tagline: 'Keep track of what you do',
   url: 'https://mmockus.github.io',
   baseUrl: '/docs/',
