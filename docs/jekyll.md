@@ -63,3 +63,7 @@ bundle install
 bundle update
 bundle exec jekyll serve
 ```
+
+## example site
+
+<https://dev.cavender.io/my-dev-setup/>
