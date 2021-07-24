@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Michael Mockus Documentation 2',
   tagline: 'Keep track of what you do',
-  url: 'https://mmockus.github.io',
+  url: 'https://mmockus.github.io/docs',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
