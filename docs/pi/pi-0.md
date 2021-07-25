@@ -90,3 +90,38 @@ curl -sSL https://install.pi-hole.net | bash
 ## Configure your Pihole
 
 Now use the UI to configure your pihole. I restored my pihole from a backup of my primary pihole.
+
+## Pihole Sync
+
+Since this is a secondary pihole, I need to sync the DNS records.
+<https://github.com/vmstan/gravity-sync/wiki/Installing#primary-pi-hole>
+<https://github.com/vmstan/gravity-sync/wiki/System-Requirements>
+
+### Create a pisync user
+
+- Create a new user: `sudo adduser pisync`
+- Grant user sudo: `usermod -aG sudo pisync`
+- Verify: `id pisync`
+
+### Install gravity-sync on your primary pihole
+
+```shell
+export GS_INSTALL=primary && curl -sSL https://gravity.vmstan.com | bash
+```
+
+### Install gravity-sync on your secondary pihole
+
+Install
+```shell
+export GS_INSTALL=secondary && curl -sSL https://gravity.vmstan.com | bash
+```
+
+Check if gravity-sync is installed
+```shell
+./gravity-sync.sh compare
+```
+
+Automatically sync DNS records
+```shell  
+./gravity-sync.sh automate 
+```
