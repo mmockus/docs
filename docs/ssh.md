@@ -13,8 +13,10 @@ use ssh key `id_rsa` or specify `-i` `~/.ssh/public_key.pub`
 
 Keep `ssh-agent` running.
 
+```bash
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/my_private_key
+```
 
 :::warning
 `ssh-agent` does not persist on windows/wsl and must be restarted.
