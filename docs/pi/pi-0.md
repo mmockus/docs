@@ -125,3 +125,6 @@ Automatically sync DNS records
 ```shell  
 ./gravity-sync.sh automate 
 ```
+
+## Reference
+- [High Availability Pi-Hole? Yes please!](https://www.youtube.com/watch?v=IFVYe3riDRA)

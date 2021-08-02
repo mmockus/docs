@@ -93,3 +93,6 @@ Set Static IPs from the router
 ```shell
 rfkill block wlan
 ```
+
+## Reference
+- [High Availability Pi-Hole? Yes please!](https://www.youtube.com/watch?v=IFVYe3riDRA)
